@@ -16,7 +16,7 @@ class Particle {
     this.x = random(5,width);
     this.y = random(5,height);
     this.r = random(1,8);
-    this.xSpeed = random(-2,24);
+    this.xSpeed = random(-2,70);
     this.ySpeed = random(-1,1.10);
   }
 
@@ -54,7 +54,7 @@ class Particle {
 let particles = [];
 
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(900, 1000);
   for(let i = 0;i<width/10;i++){
     particles.push(new Particle());
   }
